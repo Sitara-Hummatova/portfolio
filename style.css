@@ -191,19 +191,23 @@ body{
      padding-top: 50px;
 
    }
-    .sericons .sol{
+    .sericons .sol {
       flex-basis: 30%;
+      padding: 15px;
     }
      
     .sericons .orta {
     flex: 1;
+    padding: 15px;
 
     }
      .sericons .sag{
        flex-basis: 30%;
+       padding: 15px;
      }
-      .sericons h3, p, small{
-        padding: 5px;
-        
+
+      .sol1 .sag1{
+        padding-top: 10px;
+
       }
    
