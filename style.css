@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+ 
+.esassehife{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    padding: 50px;
+    gap: 80px;
+   
+    
+
+}
+ .basliq{
+   
+   display: flex;
+   justify-content: space-between;
+   font-weight: 500;
+ }
+
+
+  .burger{
+    display: none;
+  }
+   
+ 
+ .basliq a{
+    color: #000;
+    padding: 7px 20px ;
+ }
+
+ 
+
+ .info{
+    display: flex;
+    flex-wrap: wrap;
+    /*position: relative;*/
+    /*top: 9.2vh;
+    /*height: auto;*/
+    /*gap: 10px;*/}
+
+    
+ .haqqinda{
+    display: flex;
+    flex-basis: 50%;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    gap: 30px;
+   
+ }
+    
+   
+  .haqqinda h1{
+    font-size:5vw;
+    font-weight: bold;
+  }
+   
+  .bax{
+     
+     display: flex;
+     gap: 25px;
+     align-items: center;
+     
+
+  }
+
+  .bax button{
+    display: flex;
+    padding: 15px 19px;
+    background: #000;
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.09vw;
+  }
+  .bax a {
+    color: #000;
+  }
+
+
+  h1 span{
+    color: #FF8A56
+ }
+   small{
+    font-size: 1.5vw;
+    align-items: center;
+    
+
+   }
+
+ .sekil{
+    flex-basis: 50%;
+    /*height: 595px;*/
+    display: flex;
+    justify-content: flex-end;
+    min-width: 300px;
+    transform: translateY(-9%);
+}
+   
+
+   .sekil img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+   }
+
+   @media(max-width:768px)
+   {
+    .burger{
+        display: flex;
+        visibility: visible;
+    }
+    .linkler{
+        display: none;
+        
+    }
+     .sekil{
+      transform: translate(0);
+     }
+     
+   
+   }
+    @media(max-width:1117px)
+    {
+        .haqqinda{
+            flex-basis: 100%;
+            text-align: center;
+        }
+
+        }
+
+        
+    
+.partnyorlar{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 20px;
+  width: 862px;
+  position: relative;
+ 
+
+}
+ .partnyorlar h4{
+  text-align: center;
+  padding: 15px;
+ 
+ }
+   .ipsums{
+      display: flex;
+      justify-content: space-between;
+     /*padding: 20px;*/
+   }
+    .ipsums img{
+      display: flex;
+      padding: 25px;
+      
+    }
+ .services{
+  display: 100vw;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+  .services h2{
+    align-items: center;
+    color: #FF5E69;
+  }
+   .services span{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 15px;
+   }
+    
+   .sericons{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /*flex: 100%;*/
+     padding-top: 50px;
+
+   }
+    .sericons .sol{
+      flex-basis: 30%;
+    }
+     
+    .sericons .orta {
+    flex: 1;
+
+    }
+     .sericons .sag{
+       flex-basis: 30%;
+     }
+      .sericons h3, p, small{
+        padding: 5px;
+        
+      }
+   
