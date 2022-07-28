@@ -127,7 +127,11 @@ body{
      .sekil{
       transform: translate(0);
      }
+     .ipsums img{
      
+      padding: 0;
+      
+     }
    
    }
     @media(max-width:1117px)
@@ -143,17 +147,19 @@ body{
     
 .partnyorlar{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-self: center;
-  padding: 20px;
+  padding: 5px;
   width: 862px;
-  position: relative;
+  /*position: relative;*/
  
 
 }
  .partnyorlar h4{
   text-align: center;
-  padding: 15px;
+  padding: 1vw;
+  font-size: 1.4vw;
  
  }
    .ipsums{
@@ -163,7 +169,7 @@ body{
    }
     .ipsums img{
       display: flex;
-      padding: 25px;
+      padding:2vw;
       
     }
  .services{
@@ -176,11 +182,12 @@ body{
   .services h2{
     align-items: center;
     color: #FF5E69;
+    font-size: 2vw;
   }
    .services span{
-    font-size: 50px;
+    font-size: 4vw;
     font-weight: bold;
-    padding: 15px;
+    padding:1vw;
    }
     
    .sericons{
@@ -191,33 +198,25 @@ body{
      padding-top: 5vh;
     
    }
-    .sericons .sol {
-      flex-basis: 30%;
-      padding: 5vw;
+     .sericons .sol, .sag , .orta{
+      flex-basis: 33%;
+      padding: 6vw;
     }
      
-    .sericons .orta {
-    flex: 1;
-    padding: 5vw;
-
-    }
-     .sericons .sag{
-       flex-basis: 30%;
-       padding:5vw;
-     }
-
-      .sericons img , small , p {
-      
+      .sericons img , p, ul {
          padding-top:5vh;
       }
 
      .sag h3 , .sol h3{
-      padding-top: 2vh;
+      padding-top: 3vh;
       
      }
-       .paragraf{
-        line-height: 35px;
+       ul {
+        line-height: 3vw;
         font-weight: bold;
+       }
+       ul{
+        padding-left: 8px;
        }
 
        
