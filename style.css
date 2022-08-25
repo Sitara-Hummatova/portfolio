@@ -66,6 +66,7 @@ body{
         .portcreat:hover,.bax>:hover,.partnyorlar h4:hover{
           transform: scale(1.2);
           border: none;
+          transition: ease-in 0.4s;
    
  
                                    }
@@ -207,7 +208,8 @@ body{
     }
       .sol:hover, .sag:hover, .orta:hover{
         background-color: #f57139;
-        transform: scale(1.09);
+        transform: scale(1.09) ;
+        transition: ease-in .4s;
       }
      
       .sericons img ,.sericons p, .sericons ul {
@@ -562,7 +564,157 @@ body{
   
   }
 
+ /*Testimonials section*/
+  .wordonstreet{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+   
+   
+    
+  }
+  
 
+  .wordleft{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-basis: 20%;
+    padding: 50px;
+    
+  
+
+  }
+
+  .wordleft img{
+    height: 450px;
+    width: 485px;
+  }
+  .wordleft h3{
+    color: #4353FF;
+    letter-spacing: 6px;
+  }
+    .wordleft h1{
+      font-weight: bold;
+      font-size: 3.7vw;
+    }
+  .wordright{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    flex-basis: 48%;
+  
+ 
+  
+   
+  }
+
+
+
+  .wordright h4{
+    font-size: 2.6vw;
+    font-weight: bolder;
+    
+  }
+
+  .dirnaq{
+    display: flex;
+   
+    flex-direction: column;
+    padding-top: 165px;
+    gap: 30px;
+  }
+   
+   
+
+  .frankin{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;}
+
+    .frankin .navigate .navss{
+      background-color: #000;
+     
+    }
+
+    .frankin .name{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .frankin .name h6{
+      font-size: 20px;
+      font-weight: bolder;
+    }
+
+    .faqq{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      background-color: #000;
+      height: 900px;
+      color: #fff;
+      
+     
+    }
+   .faquestions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 70px;
+    
+   }
+   .quleft-right{
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  
+   }
+
+   .question{
+    display: flex;
+    padding:25px 0 45px 0 ;
+    border-bottom: 1px solid #282828;
+    justify-content: space-between;
+    gap: 15px;
+   }
+
+
+  
+   .faqq h5{
+    font-size: 4vw;
+   }
+   
+
+   .question h5{
+    font-size: 1.7vw;
+   }
+  
+ /*ready srction*/
+
+ .ready-section{
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+}
+ .ready{
+  display: flex;
+  justify-content: space-between;
+ }
+ .more{
+  display: flex;
+  flex-direction: column;
+ }
+ 
 
 
 
@@ -589,10 +741,13 @@ body{
           
          }
 
-         .prorta img{
+         .prorta img, .wordleft img {
           height: 338px;
           width: 338px;
+          align-self: center;
          }
+
+         
        
        }
         @media(max-width:1117px)
