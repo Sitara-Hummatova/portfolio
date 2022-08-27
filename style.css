@@ -26,7 +26,7 @@ body{
     height: 100%;
     display: flex;
     flex-direction:column;
-    padding: 50px;
+   /* padding: 50px;*/
     gap: 80px;
    
     
@@ -40,6 +40,7 @@ body{
    display: flex;
    justify-content: space-between;
    font-weight: 500;
+   padding: 25px 25px 0 70px;
    }
 
 
@@ -75,6 +76,7 @@ body{
  .info{
     display: flex;
     flex-wrap: wrap;
+    padding:15px 0 0 70px;
    }
 
     
@@ -235,8 +237,7 @@ body{
 .kartlar{
   display: flex;
   flex-direction: column;
-  padding-left: 0px;
-  gap: 30px;
+  gap: 50px;
   z-index: 999;
 
 } 
@@ -254,14 +255,16 @@ body{
 .kartlar-yazi{
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 10px;
-  padding-left: 30px;
+  padding: 0 25px 20px 110px ;
 
 }
  .etrafli{
   display: flex;
   justify-content: space-between;
   align-items: center;
+
  
  
  
@@ -310,8 +313,8 @@ body{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 30px;
-    font-size: 1.3vw;
+    gap: 20px;
+    font-size: 1.4vw;
     background: #fff;
     
    }
@@ -346,6 +349,7 @@ body{
     align-self: center;
     justify-content: center;
     height: 1637px;
+    
   
    }
 
@@ -363,7 +367,7 @@ body{
    }
     .navigate{
      display: flex;
-     padding: 0px 60px 10px 0 ;
+     padding: 0px 100px 10px 0 ;
      gap: 8px;
      align-self: flex-end ;
      
@@ -390,10 +394,11 @@ body{
    .solblog{
     display: flex;
     flex-direction: column;
+    min-width: 350px;
     width: 40%;
     font-size: 2vw;
     line-height: 70px;
-    padding-left: 20px;
+    padding-left: 110px;
 
    
    }
@@ -411,12 +416,13 @@ body{
     gap: 40px;
     min-width: 350px;
     line-height: 40px;
+    padding-right: 55px;
    
    
   }
 
   .sagblog p{
-    font-size: 28px;
+    font-size: 2vw;
     font-weight: bold;
   }
   
@@ -436,7 +442,7 @@ body{
  .product-hisse{
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
+  padding:0 30px 0 110px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -494,7 +500,7 @@ body{
     }
    .prsol{
     display: flex;
-   flex-basis: 25%;
+    flex-basis: 25%;
    }
   .prorta{
     display: flex;
@@ -507,69 +513,63 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 50px;
-    gap: 30px;
+    padding:10px 30px 0 110px;
+    gap: 70px;
 
   }
   .education{
     display: flex;
     flex-direction: column;
     gap: 40px;
+    min-width: 45%;
+  }
+
+  .stand, .small{
+    display: flex;
+    justify-content: space-between;
     
-    min-width: 40%;
+  }
+
+  .education-hisse small{
+    font-size: 15px;
+    color: #666;
   }
 
   .experience{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    min-width: 40%;
+    min-width: 46%;
   }
    .edu{
     display: flex;
     gap: 10px;
   }
 
-  .experience .space{
+   .standford{
     display: flex;
-    gap: 30px;
-    align-items: center;
-    
-   
-    
-  
-  }
-
-  .space, .standford{
+    flex-direction: column;
     border-bottom: 1px solid #e6e5e5;
     padding: 15px 0;
     height: 80px;
+    gap: 10px;
+    justify-content: center;
   }
 
   .space h5, .standford h5{
     font-size: 24px;
   }
-  .minidiv{
-   display: flex;
-   border-radius: 50%;
-   width: 40px;
-   height: 40px;
-   background-color: #FF5E69;
-   align-items: center;
-   
-  }
 
-  .minidiv>{
-    padding-left: 10px;
   
-  }
+  
 
  /*Testimonials section*/
   .wordonstreet{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    gap: 50px;
+    gap: 40px;
+    padding-left: 110px;
    
    
     
@@ -581,7 +581,7 @@ body{
     flex-direction: column;
     gap: 50px;
     flex-basis: 20%;
-    padding: 50px;
+   
     
   
 
@@ -604,12 +604,9 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 55px;
     gap: 15px;
-    flex-basis: 48%;
-  
- 
-  
-   
+    flex:1;
   }
 
 
@@ -622,7 +619,6 @@ body{
 
   .dirnaq{
     display: flex;
-   
     flex-direction: column;
     padding-top: 165px;
     gap: 30px;
@@ -638,8 +634,13 @@ body{
 
     .frankin .navigate .navss{
       background-color: #000;
+      
      
     }
+     .frankin .navigate{
+      padding-right: 30px;
+      gap: 0;
+     }
 
     .frankin .name{
       display: flex;
@@ -654,8 +655,9 @@ body{
 
     .faqq{
       display: flex;
-      align-items: center;
-      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 0 30px 0 110px;
+      justify-content: space-evenly;
       flex-direction: column;
       background-color: #000;
       height: 900px;
@@ -665,7 +667,6 @@ body{
     }
    .faquestions{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     gap: 70px;
     
@@ -691,7 +692,11 @@ body{
   
    .faqq h5{
     font-size: 4vw;
+    
    }
+   .faqname{
+    text-align: center;}
+   
    
 
    .question h5{
@@ -705,18 +710,61 @@ body{
   flex-direction: column;
   background-color: #000;
   color: #fff;
+  gap: 80px;
+  height:700px;
+  padding: 70px 30px 0px 110px;
+  margin-top: -80px;
+  justify-content: center;
 }
  .ready{
   display: flex;
   justify-content: space-between;
+
  }
+
+ .mailsection{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #5C5C5C;
+  flex-basis: 45%;
+ }
+
  .more{
+  padding-right:30px;
+  display: flex;
+  gap: 70px;
+  flex:1;
+  justify-content: flex-end;
+  
+ }
+
+ .more a{
+  color: #ffffff;
+  padding: 25px 15px;
+  font-weight: bolder;
+ }
+
+ .more .exper{
   display: flex;
   flex-direction: column;
  }
+
+
+ .ready-section h5{
+  font-size: 4vw;
+ }
  
+ 
+ footer{
+  display: flex;
+  gap :10px;
+ }
 
-
+ footer a{
+  color: #8A95AD;
+  
+ }
 
 
 /*MEDIA*/
@@ -747,8 +795,47 @@ body{
           align-self: center;
          }
 
+        .kartlar-sekiller {
+       
+        justify-content: center;
+         
+        }
+         .product-sekiller img{
+           width: 100%;
+           
+         }
+        .education, .experience{
+          width: 100%;
+          
+        }
+
+        .wordleft, .wordright{
+         
+        }
+          
+        .wordonstreet{
+          width: 100%;
+          flex-wrap: nowrap;
+          padding: 0 5px 0 10px;
+
+        }
+
+        .faqq{
+          width: 100%;
+         
+        }
+
+        .sagblog{
+         width: 100%;
+         padding: 55px;
+
          
        
+       }
+
+       .solblog{
+         width: 100%;
+         
        }
         @media(max-width:1117px)
         {
