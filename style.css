@@ -22,7 +22,7 @@ body{
 
  
  
-.esassehife{
+.container{
     height: 100%;
     display: flex;
     flex-direction:column;
@@ -35,12 +35,12 @@ body{
 
 
 /*NAVIGATION SECTION*/
-   .basliq{
+   .heading{
    
    display: flex;
    justify-content: space-between;
    font-weight: 500;
-   padding: 25px 25px 0 70px;
+   padding: 25px 25px 0 110px;
    }
 
 
@@ -49,7 +49,7 @@ body{
      }
    
  
-     .basliq a{
+     .heading a{
     color: #000;
     padding: 7px 20px ;
     border-radius: 7px;
@@ -57,14 +57,14 @@ body{
    
      }
 
-         .basliq a:hover,.bax button:hover{
+         .heading a:hover,.book-a-call button:hover{
       background-color: #f57139;
     
       
      
                                    }
 
-        .portcreat:hover,.bax>:hover,.partnyorlar h4:hover{
+        .portcreat:hover,.book-a-call>:hover,.partnyorlar h4:hover{
           transform: scale(1.2);
           border: none;
           transition: ease-in 0.4s;
@@ -73,14 +73,14 @@ body{
                                    }
 /*BOOK A CALL SECTION*/
 
- .info{
+ .i-design-product{
     display: flex;
     flex-wrap: wrap;
-    padding:15px 0 0 70px;
+    padding:15px 0 0 110px;
    }
 
     
- .haqqinda{
+ .i-design-about{
     display: flex;
     flex-basis: 50%;
     font-family: 'Roboto', sans-serif;
@@ -90,12 +90,12 @@ body{
  }
     
    
-  .haqqinda h1{
+  .i-design-about h1{
     font-size:5vw;
     font-weight: bold;
   }
    
-  .bax{
+  .book-a-call{
      
      display: flex;
      gap: 25px;
@@ -104,7 +104,7 @@ body{
 
   }
 
-  .bax button{
+  .book-a-call button{
     display: flex;
     padding: 13px 19px;
     background: #000;
@@ -112,7 +112,7 @@ body{
     cursor: pointer;
     font-size: 1.2vw;
   }
-  .bax a {
+  .book-a-call a {
     color: #000;
     font-size: 1.4vw;
   }
@@ -128,7 +128,7 @@ body{
 
    }
 
- .sekil{
+ .i-design-img{
     flex-basis: 50%;
     /*height: 595px;*/
     display: flex;
@@ -138,7 +138,7 @@ body{
 }
    
 
-   .sekil img{
+   .i-design-img img{
     width: 80%;
     height: 100%;
     object-fit: contain;
@@ -148,7 +148,7 @@ body{
 
 /*TRUSTED BY SECTION*/  
     
-.partnyorlar{
+.trusted-by{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -162,7 +162,7 @@ body{
 
 }
  
-   .ipsums{
+   .trusted-by-img{
       display: flex;
       justify-content: space-around;
       width: 80%;
@@ -192,7 +192,7 @@ body{
     padding:1vw;
    }
     
-   .sericons{
+   .services-icons{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -770,8 +770,8 @@ body{
 /*MEDIA*/
 
 
-       @media(max-width:768px)
-       {
+       @media(max-width:768px){
+       
         .burger{
             display: flex;
             visibility: visible;
@@ -837,6 +837,7 @@ body{
          width: 100%;
          
        }
+      }
         @media(max-width:1117px)
         {
             .haqqinda{
