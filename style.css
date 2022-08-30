@@ -10,9 +10,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,500&display=swap');
 
 body{
-    min-height: 100vh;
+    width: 100vw;
     overflow-x: hidden;
     padding: 10px 0 0 0 ;
+    font-family: 'Roboto', sans-serif;
 
 }
  button{
@@ -49,22 +50,22 @@ body{
      }
    
  
-     .heading a{
+        .heading a{
     color: #000;
     padding: 7px 20px ;
     border-radius: 7px;
    
    
-     }
+        }
 
-         .heading a:hover,.book-a-call button:hover{
-      background-color: #f57139;
+         .heading a:hover{
+          background-color: #ded3cd;
     
       
      
                                    }
 
-        .portcreat:hover,.book-a-call>:hover,.partnyorlar h4:hover{
+        .portcreat:hover,.book-a-call>:hover,.trusted-by h4:hover{
           transform: scale(1.2);
           border: none;
           transition: ease-in 0.4s;
@@ -76,7 +77,7 @@ body{
  .i-design-product{
     display: flex;
     flex-wrap: wrap;
-    padding:15px 0 0 110px;
+    padding:25px 0 0 110px;
    }
 
     
@@ -173,7 +174,7 @@ body{
     
 /*SERVICES SECTION*/
 
- .services{
+ .services-section{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,86 +182,101 @@ body{
   gap: 35px;
   width: 100%;
  }
-  .services h2{
+  .services-section h2{
     align-items: center;
     color: #FF5E69;
     font-size: 2vw;
   }
-   .services span{
+   .services-section span{
     font-size: 3.8vw;
     font-weight: bold;
     padding:1vw;
+   
+   }
+
+   .services-section p{
+    color: #666666;
    }
     
-   .services-icons{
+   .services-cards{
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
-     padding-top: 5vh;
-     gap: 10px;
+     padding-top: 25px;
+     gap: 20px;
      
     
    }
-      .sol, .sag , .orta{
-      flex-basis: 30%;
-      padding: 2vw 4vw ;
+      .service-left, .service-right , .service-middle{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      flex-basis: 32%;
+      padding:  0 0px 10px 0px ;
       min-width: 350px;
       box-shadow: 1px 3px 6px 0px rgba(0, 0, 0, 0.3);
-      gap: 15px;
+     
+      
     }
-      .sol:hover, .sag:hover, .orta:hover{
-        background-color: #f57139;
+      .service-left:hover, .service-middle:hover, .service-right:hover{
+        background-color:#ece7e4;
         transform: scale(1.09) ;
         transition: ease-in .4s;
       }
      
-      .sericons img ,.sericons p, .sericons ul {
-         padding-top:2vh;
+       .services-cards p, .services-cards ul, .services-cards h3 {
+        padding: 0 0 0 30px;
       }
 
-     .sag h3 , .sol h3{
-      padding-top: 3vh;
-      
-     }
+     
        ul {
-        line-height: 3vw;
-        font-weight: bold;
+        line-height: 35px;
+        font-weight: bolder;
         list-style-type: square;
-       }
-       ul{
-        padding-left: 8px;
+        padding-left: 40px;
        }
 
+       .service-icons{
+        height: 130px;
+        width: 153px;
+      
+      
+        
+       }
+
+       
+       
+      
 
  /*PROJECT SECTION*/
 
-.kartlar{
+.project-section{
   display: flex;
   flex-direction: column;
   gap: 50px;
   z-index: 999;
 
 } 
-.kartlar h6{
+.project-section h6{
   font-size: 1.5vw;
   color: #B16CEA;
 
 }
 
-.kartlar p{
+.project-section p{
   font-size: 3.5vw;
   font-weight: bold;
 }
 
-.kartlar-yazi{
+.project-text{
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 10px;
-  padding: 0 25px 20px 110px ;
+  padding: 0 50px 20px 110px ;
 
 }
- .etrafli{
+ .see-more{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -272,44 +288,46 @@ body{
   
  }
 
- .etrafli button{
- width: 201px;
- height: 58px;
+ .see-more button{
+ 
  font-size: 1.4vw;
  background-color: #000;
  color: #fff;
- padding: 10px 15px;
+ padding: 15px 25px;
  }
 
- .kartlar-sekiller{
+ .project-section-images{
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-content: flex-end;
+ 
+  
   
  
  }
 
-   .kartlar-sekiller .shekiller{
+   .project-section-images .project-images{
     
-    width: 400px;
+    width: 410px;
     height: 468px;
-    min-width: 200px;
+    min-width: 350px;
+   
    }
        
-   .shekiller .yuxari{
+   .project-images .project-top-img{
     width: inherit;
     height: 305px;
    }
-    .shekiller .yuxari img{
+    .project-images .project-top-img img{
       width: 100%;
       height: 100%;
 
     }
 
-   .shekiller .asagi{
+   .project-images .project-bottom-img{
     height: 163px;
-    width:400px;
+    width:410px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -320,7 +338,7 @@ body{
    }
 
    
-    .asagi h5{
+    .project-bottom-img h5{
       color: #3C46FF;
       font-size: 1.2vw;
       letter-spacing: 4px;
@@ -328,32 +346,31 @@ body{
 
     }
 
-    .asagi h3{
+    .project-bottom-img h3{
       font-size: 1.7vw;
       font-weight: 700;
     }
 
-    .asagi a{
+    .project-bottom-img a{
       color: #000;
     }
    
 
    /*LATEST BLOG SECTION*/
 
-   .blogs{
+   .latest-blogs{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 110%;
+    width: 100%;
     color: #fff;
     background: #000;
-    align-self: center;
-    justify-content: center;
-    height: 1637px;
+    height: 1400px;
     
   
    }
 
-   .navblog{
+   .blog-nav{
     display: flex;
     width: 100%;
     background: #000000;
@@ -365,9 +382,9 @@ body{
    
    
    }
-    .navigate{
+    .nav-button{
      display: flex;
-     padding: 0px 100px 10px 0 ;
+     padding: 0px 50px 10px 0 ;
      gap: 8px;
      align-self: flex-end ;
      
@@ -379,23 +396,23 @@ body{
      
     }
 
-    .navss{
+    .nav-buttons{
       background-color: #fff;
       color: #000;
       padding: 19px 25px;
       align-items: center;
     }
-     .navss:hover{
-      background-color: #FF8A56;
+     .nav-buttons:hover{
+      background-color: #f0e4df;
       transform: scale(1.1);
      }
 
 
-   .solblog{
+   .left-blog{
     display: flex;
     flex-direction: column;
     min-width: 350px;
-    width: 40%;
+    width: 42%;
     font-size: 2vw;
     line-height: 70px;
     padding-left: 110px;
@@ -403,32 +420,32 @@ body{
    
    }
    
-   .solblog a, .sagblog a{
+   .left-blog a, .right-blog a{
     color: #fff;
     font-size: 18px;
     
    } 
 
-  .sagblog{
+  .right-blog{
     display: flex;
-    width: 53%;
+    width:52%;
     flex-direction: column;
     gap: 40px;
     min-width: 350px;
     line-height: 40px;
-    padding-right: 55px;
+    padding-right: 50px;
    
    
   }
 
-  .sagblog p{
+  .right-blog p{
     font-size: 2vw;
     font-weight: bold;
   }
   
  
 
-   .miniblog{
+   .mini-blog{
     display: flex;
     flex-direction: column;
     height:200px;
@@ -439,17 +456,17 @@ body{
 /*PRODUCT DESIGNER SECTION*/
 
 
- .product-hisse{
+ .product-designer-section{
   display: flex;
   flex-direction: column;
-  padding:0 30px 0 110px;
+  padding:0 50px 0 110px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
  
  }
-   .thatsme-hisse{
+   .thatsme-section{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -479,41 +496,41 @@ body{
    
    }
 
-   .thatsme-hisse p{
+   .thatsme-section p{
     color: #666666;
     font-size: 1.7vw;
     line-height: 40px;
 
    }
-    .product-sekiller{
+    .product-images{
       display: flex;
       width: 100%;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 11px;
     }
 
-    .prsag{
+     .product-right{
       flex-basis:25%;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
     }
-   .prsol{
+    .product-left{
     display: flex;
     flex-basis: 25%;
    }
-  .prorta{
-    display: flex;
-    flex: 1;
+    .product-middle{
+     display: flex;
+     flex: 1;
   }
 
   /*EDUCATION SECTION*/
 
-  .education-hisse{
+  .education-section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding:10px 30px 0 110px;
+    padding:10px 50px 0 110px;
     gap: 70px;
 
   }
@@ -530,7 +547,7 @@ body{
     
   }
 
-  .education-hisse small{
+  .education-section small{
     font-size: 15px;
     color: #666;
   }
@@ -564,7 +581,7 @@ body{
   
 
  /*Testimonials section*/
-  .wordonstreet{
+  .wordonstreet-section{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -588,8 +605,9 @@ body{
   }
 
   .wordleft img{
-    height: 450px;
-    width: 485px;
+    min-width: 350px;
+   
+   
   }
   .wordleft h3{
     color: #4353FF;
@@ -601,11 +619,11 @@ body{
     }
   .wordright{
     display: flex;
-    flex-wrap: wrap;
+    min-width: 350px;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 55px;
-    gap: 15px;
+   
     flex:1;
   }
 
@@ -617,10 +635,10 @@ body{
     
   }
 
-  .dirnaq{
+  .wordright-right{
     display: flex;
     flex-direction: column;
-    padding-top: 165px;
+    padding-top: 185px;
     gap: 30px;
   }
    
@@ -632,13 +650,13 @@ body{
     width: 100%;
     gap: 15px;}
 
-    .frankin .navigate .navss{
+    .frankin .nav-button .nav-buttons{
       background-color: #000;
       
      
     }
-     .frankin .navigate{
-      padding-right: 30px;
+     .frankin .nav-button{
+      padding-right: 50px;
       gap: 0;
      }
 
@@ -653,7 +671,10 @@ body{
       font-weight: bolder;
     }
 
-    .faqq{
+
+     /*FAQ SECTİON*/
+
+    .faq-section{
       display: flex;
       flex-wrap: wrap;
       padding: 0 30px 0 110px;
@@ -665,13 +686,13 @@ body{
       
      
     }
-   .faquestions{
+   .faq-questions{
     display: flex;
     justify-content: space-around;
     gap: 70px;
     
    }
-   .quleft-right{
+   .question-left-right{
     display: flex;
     flex-basis: 45%;
     flex-direction: column;
@@ -690,7 +711,7 @@ body{
 
 
   
-   .faqq h5{
+   .faq-section h5{
     font-size: 4vw;
     
    }
@@ -722,7 +743,7 @@ body{
 
  }
 
- .mailsection{
+ .mail-section{
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -730,7 +751,7 @@ body{
   flex-basis: 45%;
  }
 
- .more{
+ .ready-more{
   padding-right:30px;
   display: flex;
   gap: 70px;
@@ -739,13 +760,13 @@ body{
   
  }
 
- .more a{
+ .ready-more a{
   color: #ffffff;
   padding: 25px 15px;
   font-weight: bolder;
  }
 
- .more .exper{
+ .ready-more .more-experience{
   display: flex;
   flex-direction: column;
  }
@@ -776,94 +797,28 @@ body{
             display: flex;
             visibility: visible;
         }
-        .linkler{
+        .links{
             display: none;
             
         }
-         .sekil{
+         .i-design-img{
           transform: translate(0);
          }
-         .ipsums img{
-         
-          padding: 0;
-          
-         }
 
-         .prorta img, .wordleft img {
-          height: 338px;
-          width: 338px;
-          align-self: center;
-         }
 
-        .kartlar-sekiller {
-       
-        justify-content: center;
-         
-        }
-         .product-sekiller img{
-           width: 100%;
+           .wordright-right{
+        
+            
            
-         }
-        .education, .experience{
-          width: 100%;
-          
-        }
-
-        .wordleft, .wordright{
-         
-        }
-          
-        .wordonstreet{
-          width: 100%;
-          flex-wrap: nowrap;
-          padding: 0 5px 0 10px;
-
-        }
-
-        .faqq{
-          width: 100%;
-         
-        }
-
-        .sagblog{
-         width: 100%;
-         padding: 55px;
-
-         
-       
-       }
-
-       .solblog{
-         width: 100%;
-         
-       }
-      }
-        @media(max-width:1117px)
-        {
-            .haqqinda{
-                flex-basis: 100%;
-                text-align: center;
-            }
-             
-           .sekil{
-            transform: translate(0);
-            
            }
-             .sekil img{
-              align-self: center;
-             }
-            
-           .bax{
-            align-self: center;
-    
-    
-           }
-          .bax button{
-            padding: 5px 8px;
-    
-          }
-    
-    
-            }
+        }
+
+         
+
+
+          
+
+      
+          
 
             /*THANKS FOR YOUR PATIENT*/
