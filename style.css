@@ -299,7 +299,6 @@ body{
  .project-section-images{
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
   justify-content: flex-end;
  
   
@@ -311,7 +310,7 @@ body{
     
     width: 410px;
     height: 468px;
-    min-width: 350px;
+   
    
    }
        
@@ -801,16 +800,107 @@ body{
             display: none;
             
         }
+        .i-design-product{
+          flex-wrap: nowrap;
+          flex-direction: row;
+        }
+
+        .i-design-product small{
+          font-size: 17px;
+        }
+
          .i-design-img{
           transform: translate(0);
          }
+        .trusted-by h4 , 
+        .project-section h6, 
+        .faq-section small, 
+        .services-section h5,
+        .product-designer-section h5{
+          font-size: 18px;
+        }
 
+        .services-cards{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          width: 70%;
+        }
 
-           .wordright-right{
-        
-            
+        .service-left, .service-middle, .service-right{
+          width: 100%;
+          align-items: ;
+        }
+
+        .services-section p{
+          font-size: 20px;
+        }
            
+        
+        .project-section{
+            flex-wrap: nowrap;
            }
+        .project-text{
+          
+        }
+           
+        .project-bottom-img h5, 
+        .project-bottom-img h3,
+        .project-bottom-img a {
+          font-size: 17px;
+
+
+        }
+
+        .left-blog{
+          flex-direction: row;
+          gap: 40px;
+         
+         
+        }
+
+        .left-blog, .right-blog{
+          width: 100%;
+          padding:  0 55px;
+
+        }
+        .mini-blog small,
+        .mini-blog p,
+        .mini-blog a{
+          font-size: 19px;
+        }
+
+        .over p{
+          font-size: 19px;
+        }
+         .product-designer-section{
+          padding: 0 30px;
+          align-items: center;
+          flex-wrap: wrap;
+          
+         }
+         .product-right , .product-middle {
+          width: 25%;
+         }
+
+         .product-right{
+          flex-direction: row;
+         }
+
+         .education-section{
+          flex-wrap: nowrap;
+          padding: 0 20px;
+          
+         }
+         .education , .experience{
+          width: 20%;
+         }
+
+
+
+
+
+
         }
 
          
